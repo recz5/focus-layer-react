@@ -1,0 +1,1 @@
+A React component layer that controls focus.

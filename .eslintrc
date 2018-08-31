@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+  "extends": ["eslint:recommended", "google", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules" : {
+    "keyword-spacing": [0, {"before": true, "after": true, "overrides": null}],
+    "no-return-assign": [0],
+    "linebreak-style": [0, "windows"],
+    "no-negated-condition": 0,
+    "no-trailing-spaces": 1,
+    "spaced-comment": 0,
+    "eol-last": 0,
+    "max-len": [
+      1,
+      {
+        "code": 150,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "ignoreTrailingComments": true
+      }
+    ]
+  },
+  "globals": {
+  }
+}
